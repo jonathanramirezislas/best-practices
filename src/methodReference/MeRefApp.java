@@ -14,7 +14,6 @@ public class MeRefApp {
 		
 		/* FIRST FORM <----
 		 * Arrays.sort(nombres, new Comparator<String>() {
-		 * 
 		 * @Override 
 		 * public int compare(String o1, String o2) { 
 		 * return o1.compareToIgnoreCase(o2);
@@ -38,10 +37,8 @@ public class MeRefApp {
 
 		/*FIRST FORM <----
 		 * IPersona iper = new IPersona(){
-		 * 
 		 * @Override public Persona crear(int id, String nombre) { return new
 		 * Persona(id, nombre); }
-		 * 
 		 * }; iper.crear(1, "MitoCode");
 		 */
 
@@ -58,9 +55,10 @@ public class MeRefApp {
 	}
 
 	public void operar() {
+		//FIRST FORM <---
 		// Operacion op = () -> MeRefApp.referenciarMetodoStatic();
 		// op.saludar();
-
+		//SECOND FORM <---
 		IOperacion op2 = MeRefApp::referenciarMetodoStatic;
 		op2.saludar();
 	}
