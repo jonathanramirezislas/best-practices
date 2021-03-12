@@ -33,7 +33,7 @@ public class Scopes {
 				return atributo2;
 			}			
 		};
-						//with lambda
+						//with lambda EASER
 		Operacion operacion = (x, y) -> {				
 			atributo1 = x + y;
 			atributo2 = atributo1; // global & and static you can alter the value
